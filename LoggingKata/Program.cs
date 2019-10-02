@@ -38,11 +38,20 @@ namespace LoggingKata
                 {
                     var locB = destination;
                     GeoCoordinate corB = new GeoCoordinate(locB.Location.Latitude, locB.Location.Longitude);
+                    if (corA.GetDistanceTo(corB) > distance)
+                    {
+                        distance = corA.GetDistanceTo(corB);
+                        bell1 = locA;
+                        bell2 = locB;
+                    }
+     
+                    
+
+                    
                 }
-
-
-
             }
+            Console.WriteLine(bell1.Name);
+            Console.WriteLine(bell2.Name);
         }
     }
 }
