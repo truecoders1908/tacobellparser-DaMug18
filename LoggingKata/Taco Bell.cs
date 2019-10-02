@@ -1,10 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
 namespace LoggingKata
 {
-    class Taco_Bell
+    public class Taco_Bell : ITrackable
     {
+        public string Name { get; set; }
+        public Point Location { get; set; }
     }
+
+    
 }
