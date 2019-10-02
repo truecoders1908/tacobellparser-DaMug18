@@ -16,6 +16,7 @@ namespace LoggingKata.Test
         public void ShouldParse(string str)
         {
             // TODO: Complete Should Parse
+            TacoParser parsed = new TacoParser();
         }
 
         [Theory]
